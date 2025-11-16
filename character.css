@@ -1,0 +1,602 @@
+body {
+    background: linear-gradient(to bottom, #07123f 10%, #010928 20%, #524dab 86%);
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    color: #000;
+    background-color: #000;
+}
+
+.hero {
+    background-image: linear-gradient(to bottom, rgba(3, 0, 16, 0) 1%, hsl(227, 92%, 10%) 90%), url(https://www.rockstargames.com/VI/_next/image?url=%2FVI%2F_next%2Fstatic%2Fmedia%2FCal_Hampton_landscape.b1bc01a4.jpg&w=3024&q=75);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+.navigation {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navigation a.active {
+    color: white;
+    border-bottom: 2px solid whitesmoke;
+    padding-bottom: 5px;
+    animation: borderslide 0.5s ease-in-out;
+}
+
+td:hover a.active {
+    color: black;
+    border-bottom: 2px solid black;
+}
+
+
+.navigation table {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    border: 2px solid rgb(223, 113, 201);
+}
+
+td {
+    padding: 10px 20px;
+}
+
+a {
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+td:hover {
+    transform: scale(1.2);
+    background-color: cyan;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+td:hover a {
+    color: black;
+}
+
+td.buy {
+    padding: 10px 20px;
+    border-collapse: collapse;
+}
+
+td.buy:hover {
+    transform: scale(1.2);
+    background-color: yellow;
+    box-shadow: goldenrod 0 0 10px;
+    border-color: rgb(223, 113, 201);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.logo {
+    position: sticky;
+    z-index: 0;
+    top: 2vh;
+    left: 2vh;
+    opacity: 0.8;
+}
+
+.headpage h1 {
+    color: wheat;
+    text-shadow: 0 0 10px black;
+    position: relative;
+    top: 48vh;
+    left: 13vh;
+    font-size: 55px;
+    font-weight: 600;
+    font-family: "Roboto";
+    animation: slideInP 1.5s ease-in;
+}
+
+@keyframes slideInH1 {
+    0% {
+        opacity: 0;
+
+    }
+
+    100% {
+        opacity: 1;
+
+    }
+}
+
+.headpage p {
+    color: rgb(183, 87, 159);
+    text-shadow: 0 0 20px black;
+    position: relative;
+    top: 40vh;
+    left: 122vh;
+    font-size: 35px;
+    font-weight: 600;
+    font-family: "Roboto";
+    animation: slideInP 1.5s ease-in;
+}
+
+@keyframes slideInP {
+    0% {
+        opacity: 0;
+        /* transform: translateX(150px); */
+    }
+
+    100% {
+        opacity: 1;
+        /* transform: translateX(0); */
+    }
+}
+
+.cyber-line1 {
+    position: absolute;
+    top: 100vh;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(to top, #2b2b31, transparent);
+    opacity: 0.7;
+}
+
+.jason {
+    position: relative;
+    height: fit-content;
+    animation: FadeIn 2s ease-in;
+    animation-timeline: view();
+    animation-range: entry 0% cover 90%;
+    transform: translateZ(0);
+    will-change: transform;
+
+}
+
+@keyframes FadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.jason h1 {
+    color: wheat;
+    text-shadow: 0 0 10px black;
+    position: absolute;
+    top: 2vh;
+    left: 13vh;
+    opacity: 0.8;
+    font-size: 50px;
+    font-weight: 600;
+    font-family: "Montserrat";
+}
+
+.jason h2 {
+    color: rgb(246, 150, 222);
+    text-shadow: 0 0 20px black;
+    font-family: 'Roboto';
+    font-size: 35px;
+    font-weight: 600;
+    position: absolute;
+    top: 19vh;
+    left: 13vh;
+}
+
+.jason p {
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 40px black;
+    position: absolute;
+    top: 42vh;
+    left: 13vh;
+    font-size: 25px;
+    font-weight: 440;
+    font-family: "Roboto";
+}
+
+.jason .jason1 {
+    position: absolute;
+    top: 10vh;
+    left: 68vh;
+    width: 60vw;
+    object-fit: cover;
+    height: 80vh;
+    border: 5px solid transparent;
+    border-radius: 10px;
+    transition: 0.5s;
+    transform: translateZ(0);
+    will-change: transform;
+
+}
+
+.jason .jason1:hover {
+    border: 8px solid wheat;
+    box-shadow: 0 0 20px black;
+    transform: scale(0.990);
+}
+
+.jason .jason2 {
+    position: absolute;
+    top: 93vh;
+    left: 68vh;
+    width: 60vw;
+    object-fit: cover;
+    height: 50vh;
+    border: 5px solid transparent;
+    border-radius: 15px;
+    transition: 0.5s;
+    transform: translateZ(0);
+    will-change: transform;
+
+}
+
+.jason .jason2:hover {
+    border: 8px solid wheat;
+    box-shadow: 0 0 20px black;
+    transform: scale(0.990);
+}
+
+.jason .jason3 {
+    position: absolute;
+    top: 80vh;
+    left: 12.5vh;
+    width: 29vw;
+    object-fit: cover;
+    height: 63vh;
+    border: 5px solid transparent;
+    border-radius: 15px;
+    transition: 0.5s;
+    transform: translateZ(0);
+    will-change: transform;
+
+}
+
+.jason .jason3:hover {
+    border: 8px solid wheat;
+    box-shadow: 0 0 20px black;
+    transform: scale(0.990);
+}
+
+.cyber-line2 {
+    position: absolute;
+    top: 260vh;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(to top, #191934, transparent);
+    opacity: 0.7;
+}
+
+.lucia {
+    position: relative;
+    top: 170vh;
+    height: fit-content;
+    padding-bottom: 70vh;
+    animation: FadeIn 2s ease-in;
+    animation-timeline: view();
+    animation-range: entry 0% cover 70%;
+    transform: translateZ(0);
+    will-change: transform;
+}
+
+
+@keyframes FadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.lucia h1 {
+    color: wheat;
+    text-shadow: 0 0 10px black;
+    position: absolute;
+    top: 2vh;
+    right: 13vh;
+    opacity: 0.8;
+    font-size: 50px;
+    font-weight: 600;
+    font-family: "Montserrat";
+}
+
+.lucia h2 {
+    color: rgb(246, 150, 222);
+    text-shadow: 0 0 20px black;
+    font-family: 'Roboto';
+    font-size: 35px;
+    font-weight: 600;
+    position: absolute;
+    top: 19vh;
+    right: 33vh;
+}
+
+.lucia p {
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 40px black;
+    position: absolute;
+    top: 42vh;
+    right: 20vh;
+    font-size: 25px;
+    font-weight: 440;
+    font-family: "Roboto";
+}
+
+.lucia .lucia1 {
+    position: absolute;
+    top: 11vh;
+    left: 2vh;
+    width: 55vw;
+    object-fit: cover;
+    height: 70vh;
+    border: 5px solid transparent;
+    border-radius: 15px;
+    transition: 0.5s;
+    transform: translateZ(0);
+    will-change: transform;
+
+
+}
+
+.lucia .lucia1:hover {
+    border: 8px solid wheat;
+    box-shadow: 0 0 20px black;
+    transform: scale(0.990);
+}
+
+.lucia .lucia2 {
+    position: absolute;
+    top: 77vh;
+    right: 18.5vh;
+    width: 29vw;
+    object-fit: cover;
+    height: 62.5vh;
+    border: 5px solid transparent;
+    border-radius: 15px;
+    transition: 0.5s;
+    transform: translateZ(0);
+    will-change: transform;
+
+}
+
+.lucia .lucia2:hover {
+    border: 8px solid wheat;
+    box-shadow: 0 0 20px black;
+    transform: scale(0.990);
+}
+
+.lucia .lucia3 {
+    position: absolute;
+    top: 85.5vh;
+    left: 2.5vh;
+    height: 55vh;
+    object-fit: cover;
+    width: 55vw;
+    border: 5px solid transparent;
+    border-radius: 15px;
+    transition: 0.5s;
+    transform: translateZ(0);
+    will-change: transform;
+
+}
+
+
+.lucia .lucia3:hover {
+    border: 8px solid wheat;
+    box-shadow: 0 0 20px black;
+    transform: scale(0.990);
+}
+
+
+
+
+footer {
+    position: relative;
+    height: 40vh;
+    color: rgb(255, 255, 255);
+    margin-top: 300vh;
+    margin-bottom: 0;
+    text-align: center;
+    padding: 20px;
+    background-color: #000000;
+    font-family: "Bebas Neue";
+}
+
+
+
+footer p {
+    position: absolute;
+    bottom: 3.5vh;
+    left: 38%;
+}
+
+.foot1 p {
+    position: absolute;
+    left: 6vw;
+    top: 8vh;
+    color: #c7d8d8;
+    font-weight: 600;
+}
+
+.fa-square-youtube {
+    position: absolute;
+    top: 5.25vw;
+    left: 17vw;
+    color: cyan;
+    transition: 0.2s;
+    font-size: 35px;
+}
+
+.fa-square-youtube:hover {
+    transform: scale(1.2);
+    color: #FF3D00;
+    cursor: pointer;
+}
+
+.fa-square-facebook {
+    position: absolute;
+    top: 5.25vw;
+    left: 21.5vw;
+    color: cyan;
+    transition: 0.2s;
+    font-size: 35px;
+}
+
+.fa-square-facebook:hover {
+    transform: scale(1.2);
+    color: #1877F2;
+    cursor: pointer;
+}
+
+.fa-x-twitter {
+    position: absolute;
+    top: 5.25vw;
+    left: 26vw;
+    color: cyan;
+    transition: 0.2s;
+    transition: 0.2s;
+    font-size: 32px;
+}
+
+.fa-x-twitter:hover {
+    transform: scale(1.2);
+    color: white;
+    cursor: pointer;
+}
+
+.fa-instagram {
+    position: absolute;
+    top: 5.25vw;
+    left: 30.5vw;
+    color: cyan;
+    transition: 0.2s;
+    font-size: 35px;
+}
+
+.fa-instagram:hover {
+    transform: scale(1.2);
+    color: #C13584;
+    cursor: pointer;
+}
+
+.fa-discord {
+    position: absolute;
+    top: 5.25vw;
+    left: 35vw;
+    color: cyan;
+    transition: 0.2s;
+    font-size: 35px;
+}
+
+.fa-discord:hover {
+    transform: scale(1.2);
+    color: #5865F2;
+    cursor: pointer;
+}
+
+.fa-linkedin {
+    position: absolute;
+    top: 5.25vw;
+    left: 40.5vw;
+    color: cyan;
+    transition: 0.2s;
+    font-size: 35px;
+}
+
+.fa-linkedin:hover {
+    transform: scale(1.2);
+    color: #0483c7;
+    cursor: pointer;
+}
+
+.fa-twitch {
+    position: absolute;
+    top: 5.5vw;
+    left: 45vw;
+    color: cyan;
+    transition: 0.2s;
+    font-size: 35px;
+}
+
+.fa-twitch:hover {
+    transform: scale(1.2);
+    color: rgb(145, 70, 255);
+    cursor: pointer;
+}
+
+.line-foot1 {
+    position: absolute;
+    top: 19vh;
+    left: 6vw;
+    width: 90%;
+    height: 4px;
+    opacity: 0.7;
+    background: linear-gradient(to top, #3f3f43, transparent);
+}
+
+.line-foot2 {
+    position: absolute;
+    top: 29vh;
+    left: 6vw;
+    width: 90%;
+    height: 4px;
+    opacity: 0.7;
+    background: linear-gradient(to top, #3f3f43, transparent);
+}
+
+.terms a {
+    font-family: Rajdhani;
+    font-size: 20px;
+    display: inline;
+    margin-right: 30px;
+    color: cyan;
+    text-decoration: none;
+    text-shadow: 0 0 3px rgb(161, 168, 173);
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.terms a:hover {
+    color: rgb(255, 183, 0);
+    cursor: pointer;
+}
+
+.terms {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 23vh;
+    left: 6vw;
+}
+
+.footer-logo1 {
+    position: absolute;
+    top: 32vh;
+    left: 10vw;
+    background-color: rgb(251, 191, 0);
+    transition: 0.3s;
+}
+
+.footer-logo1:hover {
+    transform: scale(1.02);
+    filter: drop-shadow(0 0 5px #fbbf00);
+    cursor: pointer;
+}
+
+.footer-logo2 {
+    position: absolute;
+    top: 0.5vh;
+    left: 71vw;
+}
+
+.footer-logo3 {
+    position: absolute;
+    top: 6vh;
+    border-right: 0.7px solid white;
+    left: 85vw;
+}

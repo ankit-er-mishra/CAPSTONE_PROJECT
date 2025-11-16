@@ -1,0 +1,603 @@
+body {
+    background: linear-gradient(to bottom, #07123f 10%, #010928 20%, #524dab 86%);
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    color: #000;
+    background-color: #000;
+}
+
+.hero {
+    background-image: linear-gradient(to bottom, rgba(3, 0, 16, 0) 1%, hsl(227, 92%, 10%) 90%), url(https://www.rockstargames.com/VI/_next/image?url=%2FVI%2F_next%2Fstatic%2Fmedia%2FBoobie_Ike_landscape.67ebb1f6.jpg&w=3024&q=75);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+}
+
+.navigation {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navigation a.active {
+    color: white;
+    border-bottom: 2px solid whitesmoke;
+    padding-bottom: 5px;
+    animation: borderslide 0.5s ease-in-out;
+}
+
+td:hover a.active {
+    color: black;
+    border-bottom: 2px solid black;
+}
+
+
+.navigation table {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    border: 2px solid rgb(223, 113, 201);
+}
+
+td {
+    padding: 10px 20px;
+}
+
+a {
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+td:hover {
+    transform: scale(1.2);
+    background-color: cyan;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+td:hover a {
+    color: black;
+}
+
+td.buy {
+    padding: 10px 20px;
+    border-collapse: collapse;
+}
+
+td.buy:hover {
+    transform: scale(1.2);
+    background-color: yellow;
+    box-shadow: goldenrod 0 0 10px;
+    border-color: rgb(223, 113, 201);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.logo {
+    position: sticky;
+    z-index: 0;
+    top: 2vh;
+    left: 2vh;
+    opacity: 0.8;
+}
+
+.headpage h1 {
+    color: wheat;
+    text-shadow: 0 0 10px black;
+    position: relative;
+    top: -35vh;
+    left: 13vh;
+    font-size: 55px;
+    font-weight: 600;
+    font-family: "Roboto";
+    animation: slideInH1 0.9s ease-out forwards;
+}
+
+.headpage p {
+    position: absolute;
+    top: 83vh;
+    left: 13.5vh;
+    color: #E573A1;
+    text-shadow: 0 0 5px black;
+    font-size: 25px;
+    font-weight: 700;
+    animation: slideInP 0.9s ease-out forwards;
+}
+
+@keyframes slideInH1 {
+    0% {
+        transform: translateX(-150px);
+        opacity: 0.2;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInP {
+    0% {
+        transform: translateX(150px);
+        opacity: 0.2;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.cyber-line1 {
+    position: absolute;
+    top: 100vh;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(to top, rgb(24, 24, 24), transparent);
+    z-index: -1;
+}
+
+.intro {
+    position: relative;
+    margin-left: 2vw;
+    top: -15vh;
+    display: flex;
+    gap: 2vw;
+    animation: fadeInIntro 1s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 60%;
+}
+
+@keyframes fadeInIntro {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#jason {
+    border: 6px solid wheat;
+    transition: 0.3s;
+    height: 530px;
+}
+
+#jason:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 35px rgb(255, 0, 149);
+    transform: rotate(1deg);
+}
+
+#lucia {
+    height: 35vh;
+    border: 6px solid wheat;
+    transition: 0.3s;
+}
+
+#lucia:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 35px rgb(255, 0, 149);
+    transform: rotate(-1deg);
+}
+
+.intro-write h1 {
+    position: absolute;
+    font-size: 50px;
+    top: 155vh;
+    left: 33vw;
+    background: linear-gradient(90deg, #ca2f7f, #ff997a);
+    font-family: 'Montserrat';
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: FadeInh1 1s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+
+@keyframes FadeInh1 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.intro-write p {
+    margin-top: -90px;
+    font-size: 30px;
+    position: absolute;
+    top: 180vh;
+    left: 33vw;
+    background: linear-gradient(270deg, #d84b93, #ff8b68);
+    font-family: 'Montserrat';
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: FadeInp 1s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+
+@keyframes FadeInp {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.cyber-line2 {
+    position: absolute;
+    top: 205vh;
+    background: linear-gradient(to top, #4540a6 10%, transparent);
+    height: 4px;
+    width: 100%;
+    z-index: -1;
+}
+
+.about-leonida {
+    position: absolute;
+    top: 210vh;
+    width: 100%;
+    height: fit-content;
+}
+
+.about-leonida p {
+    font-family: 'Montserrat';
+    position: absolute;
+    top: 127vh;
+    left: 70vw;
+    font-size: 40px;
+    background: linear-gradient(270deg, #ff8b68, #ff4fa3, #b881e2);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: FadeInp 1s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 55%;
+}
+
+@keyframes FadeInp {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.about-leonida img {
+    border: 6px solid wheat;
+    position: absolute;
+    top: 120vh;
+    left: 26vw;
+    transition: 0.5s;
+    animation: fadeInImg 1s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 55%;
+}
+
+@keyframes fadeInImg {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.about-leonida img:hover {
+    transform: rotate(0);
+    transform: rotate(1deg);
+    box-shadow: 0 0 35px rgb(255, 0, 149);
+}
+
+.about-leonida h1 {
+    font-family: Nunito Sans;
+    position: absolute;
+    left: 2vw;
+    top: 110vh;
+    font-size: 60px;
+    font-weight: 100;
+    background: linear-gradient(90deg, #ff8b68, #ff4fa3, #b881e2);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: FadeInh1 1s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 75%;
+}
+
+@keyframes FadeInh1 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.video-trailer {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+}
+
+.video-trailer h1 {
+    position: absolute;
+    top: 20vh;
+    left: 38vw;
+    font-size: 40px;
+    font-family: 'Montserrat';
+    background: linear-gradient(0deg, cyan, #fb9b7d);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: FadeInh1 1s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 70%;
+}
+
+@keyframes FadeInh1 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.video-t-2 {
+    position: relative;
+    top: 35vh;
+    left: 5vw;
+    object-fit: cover;
+    margin-bottom: 10vh;
+    transition: 0.5s;
+    border-radius: 20px;
+    border: 8px solid transparent;
+    animation: FadeInVideo 1s ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
+}
+
+@keyframes FadeInVideo {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.video-t-2:hover {
+    box-shadow: 0 0 25px rgb(255, 0, 149);
+    transform: scale(0.985);
+    border: 8px solid wheat;
+}
+
+.cyber-line3 {
+    position: absolute;
+    top: 318vh;
+    background: linear-gradient(to top, #312ba8 30%, transparent);
+    height: 4px;
+    width: 100%;
+    z-index: -1;
+}
+
+footer {
+    position: relative;
+    height: 40vh;
+    color: rgb(255, 255, 255);
+    margin-top: 110vh;
+    margin-bottom: 0;
+    text-align: center;
+    padding: 20px;
+    background-color: #000000;
+    font-family: "Bebas Neue";
+}
+
+footer p {
+    position: absolute;
+    bottom: 3.5vh;
+    left: 38%;
+}
+
+.foot1 p {
+    position: absolute;
+    left: 6vw;
+    top: 8vh;
+    color: #c7d8d8;
+    font-weight: 600;
+}
+
+.fa-square-youtube {
+    position: absolute;
+    top: 5.25vw;
+    left: 17vw;
+    color: cyan;
+    transition: 0.2s;
+    font-size: 35px;
+}
+
+.fa-square-youtube:hover {
+    transform: scale(1.2);
+    color: #FF3D00;
+    cursor: pointer;
+}
+
+.fa-square-facebook {
+    position: absolute;
+    top: 5.25vw;
+    left: 21.5vw;
+    color: cyan;
+    transition: 0.2s;
+    font-size: 35px;
+}
+
+.fa-square-facebook:hover {
+    transform: scale(1.2);
+    color: #1877F2;
+    cursor: pointer;
+}
+
+.fa-x-twitter {
+    position: absolute;
+    top: 5.25vw;
+    left: 26vw;
+    color: cyan;
+    transition: 0.2s;
+    transition: 0.2s;
+    font-size: 32px;
+}
+
+.fa-x-twitter:hover {
+    transform: scale(1.2);
+    color: white;
+    cursor: pointer;
+}
+
+.fa-instagram {
+    position: absolute;
+    top: 5.25vw;
+    left: 30.5vw;
+    color: cyan;
+    transition: 0.2s;
+    font-size: 35px;
+}
+
+.fa-instagram:hover {
+    transform: scale(1.2);
+    color: #C13584;
+    cursor: pointer;
+}
+
+.fa-discord {
+    position: absolute;
+    top: 5.25vw;
+    left: 35vw;
+    color: cyan;
+    transition: 0.2s;
+    font-size: 35px;
+}
+
+.fa-discord:hover {
+    transform: scale(1.2);
+    color: #5865F2;
+    cursor: pointer;
+}
+
+.fa-linkedin {
+    position: absolute;
+    top: 5.25vw;
+    left: 40.5vw;
+    color: cyan;
+    transition: 0.2s;
+    font-size: 35px;
+}
+
+.fa-linkedin:hover {
+    transform: scale(1.2);
+    color: #0483c7;
+    cursor: pointer;
+}
+
+.fa-twitch {
+    position: absolute;
+    top: 5.5vw;
+    left: 45vw;
+    color: cyan;
+    transition: 0.2s;
+    font-size: 35px;
+}
+
+.fa-twitch:hover {
+    transform: scale(1.2);
+    color: rgb(145, 70, 255);
+    cursor: pointer;
+}
+
+.line-foot1 {
+    position: absolute;
+    top: 19vh;
+    left: 6vw;
+    width: 90%;
+    height: 4px;
+    opacity: 0.7;
+    background: linear-gradient(to top, #3f3f43, transparent);
+}
+
+.line-foot2 {
+    position: absolute;
+    top: 29vh;
+    left: 6vw;
+    width: 90%;
+    height: 4px;
+    opacity: 0.7;
+    background: linear-gradient(to top, #3f3f43, transparent);
+}
+
+.terms a {
+    font-family: Rajdhani;
+    font-size: 20px;
+    display: inline;
+    margin-right: 30px;
+    color: cyan;
+    text-decoration: none;
+    text-shadow: 0 0 3px rgb(161, 168, 173);
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.terms a:hover {
+    color: rgb(255, 183, 0);
+    cursor: pointer;
+}
+
+.terms {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 23vh;
+    left: 6vw;
+}
+
+.footer-logo1 {
+    position: absolute;
+    top: 32vh;
+    left: 10vw;
+    background-color: rgb(251, 191, 0);
+    transition: 0.3s;
+}
+
+.footer-logo1:hover {
+    transform: scale(1.02);
+    filter: drop-shadow(0 0 5px #fbbf00);
+    cursor: pointer;
+}
+
+.footer-logo2 {
+    position: absolute;
+    top: 0.5vh;
+    left: 71vw;
+}
+
+.footer-logo3 {
+    position: absolute;
+    top: 6vh;
+    border-right: 0.7px solid white;
+    left: 85vw;
+}
