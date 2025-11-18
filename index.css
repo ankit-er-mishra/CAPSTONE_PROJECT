@@ -1,7 +1,9 @@
+
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
+
 
 body {
     background: linear-gradient(to bottom, #041145, #0e173c 30%, #5853b8 96%);
@@ -687,3 +689,5 @@ footer p {
     border-right: 0.7px solid white;
     left: 85vw;
 }
+
+

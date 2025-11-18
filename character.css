@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(to bottom, #07123f 10%, #010928 20%, #524dab 86%);
+    background: linear-gradient(to bottom, #07123f 10%, #010928 20%, #3e38aa 96%);
     overflow-x: hidden;
     padding: 0;
     margin: 0;
@@ -392,6 +392,168 @@ td.buy:hover {
     transform: scale(0.990);
 }
 
+.cyber-line3 {
+    position: absolute;
+    top: 430vh;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(to top, #30304e, transparent);
+    opacity: 0.7;
+}
+
+.cal{position: relative;
+    top: 270vh;
+    height: fit-content;
+    padding-bottom: 70vh;
+    animation: FadeIn 2s ease-in;
+    animation-timeline: view();
+    animation-range: entry 0% cover 70%;
+    transform: translateZ(0);
+    will-change: transform;}
+
+@keyframes FadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    65% {
+        opacity: 1;
+    }
+}
+
+.cal h1 {
+    color: wheat;
+    text-shadow: 0 0 10px black;
+    position: absolute;
+    top: 2vh;
+    left: 13vh;
+    opacity: 0.8;
+    font-size: 50px;
+    font-weight: 600;
+    font-family: "Montserrat";
+}
+
+.cal h2 {
+    color: rgb(246, 150, 222);
+    text-shadow: 0 0 20px black;
+    font-family: 'Roboto';
+    font-size: 35px;
+    font-weight: 600;
+    position: absolute;
+    top: 19vh;
+    left: 13vh;
+}
+
+.cal p {
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 40px black;
+    position: absolute;
+    top: 42vh;
+    left: 13vh;
+    font-size: 25px;
+    font-weight: 440;
+    font-family: "Roboto";
+}
+
+.cal .cal1 {
+    position: absolute;
+    top: 10vh;
+    left: 68vh;
+    width: 60vw;
+    object-fit: cover;
+    height: 80vh;
+    border: 5px solid transparent;
+    border-radius: 10px;
+    transition: 0.5s;
+    transform: translateZ(0);
+    will-change: transform;
+}
+
+.cal .cal1:hover {
+    border: 8px solid wheat;
+    box-shadow: 0 0 20px black;
+    transform: scale(0.990);
+}  
+
+.cal .cal2 {
+    position: absolute;
+    top: 93vh;
+    left: 68vh;
+    width: 60vw;
+    object-fit: cover;
+    height: 55vh;
+    border: 5px solid transparent;
+    border-radius: 15px;
+    transition: 0.5s;
+    transform: translateZ(0);
+    will-change: transform;
+}
+.cal .cal2:hover {
+    border: 8px solid wheat;
+    box-shadow: 0 0 20px black;
+    transform: scale(0.990);}
+
+
+.cal .cal3 {
+    position: absolute;
+    top: 80vh;
+    left: 12.5vh;
+    width: 29vw;
+    object-fit: cover;
+    height: 68vh;
+    border: 5px solid transparent;
+    border-radius: 15px;
+    transition: 0.5s;
+    transform: translateZ(0);
+    will-change: transform;
+}    
+
+.cal .cal3:hover {
+    border: 8px solid wheat;
+    box-shadow: 0 0 20px black;
+    transform: scale(0.990);
+}
+
+.cyber-line4 {
+    position: absolute;
+    top: 610vh;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(to top, #0a0a45, transparent);
+    opacity: 0.7;
+}
+
+.end {
+    position: absolute;
+    top: 620vh;
+    left: 15vh;
+    font-size: 30px;
+    color: pink;
+    font-family: Orbitron;
+    animation: FadeIn 2s ease-in;
+    animation-timeline: view();
+    animation-range: entry 0% cover 70%;
+    transform: translateZ(0);
+    will-change: transform;
+}
+
+
+
+.question {
+    color: cyan;
+    text-shadow: 0 0 10px black;
+    position: relative;
+    opacity: 0.8;
+    font-size: 50px;
+    font-weight: 600;
+    font-family: "Rajdhani";
+}
+
+
+
+
+
+
 
 
 
@@ -399,7 +561,7 @@ footer {
     position: relative;
     height: 40vh;
     color: rgb(255, 255, 255);
-    margin-top: 300vh;
+    margin-top: 410vh;
     margin-bottom: 0;
     text-align: center;
     padding: 20px;
