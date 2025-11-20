@@ -746,7 +746,7 @@ footer p {
 
 .footer-logo1:hover {
     transform: scale(1.02);
-    filter: drop-shadow(0 0 5px #fbbf00);
+    box-shadow:(0 0 5px #fbbf00);
     cursor: pointer;
 }
 
