@@ -10,6 +10,7 @@ body {
 .hero {
     background-image: linear-gradient(to bottom, rgba(3, 0, 16, 0) 1%, hsl(227, 92%, 10%) 90%), url(https://www.rockstargames.com/VI/_next/image?url=%2FVI%2F_next%2Fstatic%2Fmedia%2FBoobie_Ike_landscape.67ebb1f6.jpg&w=3024&q=75);
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
     width: 100%;
@@ -256,7 +257,7 @@ td.buy:hover {
 .about-leonida p {
     font-family: 'Montserrat';
     position: absolute;
-    top: 127vh;
+    top: 137vh;
     left: 70vw;
     font-size: 40px;
     background: linear-gradient(270deg, #ff8b68, #ff4fa3, #b881e2);
@@ -280,7 +281,7 @@ td.buy:hover {
 .about-leonida img {
     border: 6px solid wheat;
     position: absolute;
-    top: 120vh;
+    top: 130vh;
     left: 26vw;
     transition: 0.5s;
     animation: fadeInImg 1s ease-in-out;
@@ -308,7 +309,7 @@ td.buy:hover {
     font-family: Nunito Sans;
     position: absolute;
     left: 2vw;
-    top: 110vh;
+    top: 120vh;
     font-size: 60px;
     font-weight: 100;
     background: linear-gradient(90deg, #ff8b68, #ff4fa3, #b881e2);
@@ -337,7 +338,7 @@ td.buy:hover {
 
 .video-trailer h1 {
     position: absolute;
-    top: 20vh;
+    top: 30vh;
     left: 38vw;
     font-size: 40px;
     font-family: 'Montserrat';
@@ -361,14 +362,14 @@ td.buy:hover {
 
 .video-t-2 {
     position: relative;
-    top: 35vh;
+    top: 45vh;
     left: 5vw;
     object-fit: cover;
     margin-bottom: 10vh;
     transition: 0.5s;
     border-radius: 20px;
     border: 8px solid transparent;
-    animation: FadeInVideo 1s ease-in-out;
+    animation: FadeInVideo ;
     animation-timeline: view();
     animation-range: entry 0% cover 50%;
 }
@@ -391,7 +392,7 @@ td.buy:hover {
 
 .cyber-line3 {
     position: absolute;
-    top: 318vh;
+    top: 333vh;
     background: linear-gradient(to top, #312ba8 30%, transparent);
     height: 4px;
     width: 100%;
@@ -585,7 +586,7 @@ footer p {
 
 .footer-logo1:hover {
     transform: scale(1.02);
-    box-shadow:(0 0 5px #fbbf00);
+    box-shadow: (0 0 15px #fbbf00);
     cursor: pointer;
 }
 
@@ -601,3 +602,245 @@ footer p {
     border-right: 0.7px solid white;
     left: 85vw;
 }
+
+
+@media (max-width: 768px) {
+
+    footer {
+        height: auto;
+        padding: 20px 10px;
+        text-align: center;
+    }
+
+    .foot1 p {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+    .foot1 i {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin: 0 5px;
+        font-size: 25px;
+    }
+
+    .footer-logos img {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin: 5px;
+        height: 50px;
+        width: auto;
+    }
+
+    .line-foot1, .line-foot2 {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .terms {
+        flex-direction: column;
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-top: 10px;
+    }
+
+    .terms a {
+        margin: 5px 0;
+        font-size: 14px;
+    }
+
+    footer p {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        font-size: 12px;
+        margin-top: 15px;
+    }
+}
+
+
+@media  (min-width: 769px) and (max-width: 1024px) {
+
+    .foot1 p {
+        font-size: 16px;
+        left: 2vw;
+    }
+
+    .foot1 i {
+        font-size: 28px;
+        margin: 0 8px;
+    }
+
+    .footer-logos img {
+        height: 60px;
+        margin: 5px 10px;
+    }
+
+    .terms a {
+        font-size: 16px;
+        margin-right: 15px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+
+    .line-foot1, .line-foot2 {
+        width: 95%;
+        left: 2.5%;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .foot1 p {
+        font-size: 18px;
+    }
+
+    .foot1 i {
+        font-size: 32px;
+    }
+
+    .footer-logos img {
+        height: 80px;
+    }
+
+    .terms a {
+        font-size: 18px;
+        margin-right: 25px;
+    }
+
+    footer p {
+        font-size: 16px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    
+    .logo {
+        position: relative;
+        top: 10px;
+        left: 10px;
+        height: 80px;
+        width: auto;
+        opacity: 1;
+    }
+
+    
+    .navigation table {
+        font-size: 12px;
+    }
+
+    .headpage h1 {
+        font-size: 30px;
+        top: 30vh;
+        left: 5vw;
+        width: 90%;
+    }
+
+    .headpage p {
+        font-size: 18px;
+        top: 38vh;
+        left: 5vw;
+        width: 90%;
+    }
+
+    
+    .intro #jason img,
+    .intro #lucia img {
+        width: 90%;
+        height: auto;
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-bottom: 20px;
+    }
+
+    
+    .intro-write h1 {
+        font-size: 28px;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .intro-write p {
+        font-size: 16px;
+        text-align: center;
+        margin: 10px 5vw;
+    }
+
+    
+    .video-trailer iframe {
+        width: 95%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
+
+    
+    .about-leonida {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-leonida img {
+        width: 90%;
+        height: auto;
+        margin: 20px 0;
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .headpage h1 {
+        font-size: 40px;
+        top: 35vh;
+        left: 5vw;
+    }
+
+    .headpage p {
+        font-size: 22px;
+        top: 42vh;
+        left: 5vw;
+    }
+
+    .intro #jason img,
+    .intro #lucia img {
+        width: 70%;
+        height: auto;
+    }
+
+    .intro-write h1 {
+        font-size: 36px;
+    }
+
+    .intro-write p {
+        font-size: 18px;
+        margin: 10px 5vw;
+    }
+
+    .video-trailer iframe {
+        width: 90%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
+
+    .about-leonida img {
+        width: 80%;
+        height: auto;
+    }
+}
+

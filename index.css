@@ -24,7 +24,7 @@ h1 {
         url("https://www.rockstargames.com/VI/_next/image?url=%2FVI%2F_next%2Fstatic%2Fmedia%2FJason_and_Lucia_01_landscape.0e2a6544.jpg&w=3024&q=75");
     position: relative;
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     background-size: cover;
     background-repeat: no-repeat;
     color: black;
@@ -149,8 +149,6 @@ td.buy:hover {
 
 
 
-
-
 .play-button:hover {
     background-color: rgb(241, 238, 234);
     color: black;
@@ -224,7 +222,7 @@ td.buy:hover {
 
 .post1:hover .name1 {
     bottom: -13%;
-    z-index: 1;
+    /* z-index: 1; */
     opacity: 1;
     font-size: large;
     color: cyan;
@@ -673,7 +671,7 @@ footer p {
 
 .footer-logo1:hover {
     transform: scale(1.02);
-    box-shadow:(0 0 5px #fbbf00);
+    box-shadow: (0 0 15px #fbbf00);
     cursor: pointer;
 }
 
@@ -689,5 +687,152 @@ footer p {
     border-right: 0.7px solid white;
     left: 85vw;
 }
+
+
+@media (max-width: 768px) {
+
+
+    .hero h2 {
+        font-size: 6vw;
+        right: auto;
+        left: 5%;
+        top: 30%;
+        text-align: left;
+    }
+
+    .hero p {
+        width: 90%;
+        left: 5%;
+        bottom: 10%;
+        font-size: 16px;
+    }
+
+    .play-button {
+        left: 5%;
+        top: 50%;
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .post1, .post2, .post3 {
+        position: static;
+        width: 90%;
+        height: auto;
+        transform: rotate(0deg);
+        margin: 20px auto;
+    }
+
+    .name1, .name2, .name3 {
+        position: relative;
+        bottom: 0;
+        font-size: 18px;
+    }
+
+    .info h2 {
+        position: static;
+        font-size: 24px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+
+    .map {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .map h2 {
+        position: static;
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+
+    .map1, .map2, .map3, .map4 {
+        position: static;
+        width: 90%;
+        max-width: 400px;
+        height: auto;
+        margin: 10px 0;
+    }
+
+
+    .outro h2, .outro p {
+        position: static;
+        text-align: center;
+        width: 90%;
+        margin: 20px auto;
+        font-size: 20px;
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .hero h2 {
+        font-size: 4.5vw;
+        right: auto;
+        left: 5%;
+        top: 35%;
+    }
+
+    .hero p {
+        width: 80%;
+        left: 5%;
+        bottom: 5%;
+        font-size: 18px;
+    }
+
+    .play-button {
+        left: 5%;
+        top: 50%;
+        font-size: 18px;
+        padding: 12px 24px;
+    }
+
+
+    .post1, .post2, .post3 {
+        position: relative;
+        width: 45%;
+        height: auto;
+        margin: 20px 2.5%;
+        display: inline-block;
+    }
+
+    .info h2 {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    .map {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .map1, .map2, .map3, .map4 {
+        width: 45%;
+        max-width: 400px;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    .map h2 {
+        font-size: 28px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+
+    .outro h2, .outro p {
+        text-align: center;
+        width: 80%;
+        margin: 20px auto;
+        font-size: 22px;
+    }
+}
+
 
 

@@ -10,6 +10,7 @@ body {
 .hero {
     background-image: linear-gradient(to bottom, rgba(3, 0, 16, 0) 1%, hsl(227, 92%, 10%) 90%), url(https://www.rockstargames.com/VI/_next/image?url=%2FVI%2F_next%2Fstatic%2Fmedia%2FCal_Hampton_landscape.b1bc01a4.jpg&w=3024&q=75);
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
     width: 100%;
@@ -746,7 +747,7 @@ footer p {
 
 .footer-logo1:hover {
     transform: scale(1.02);
-    box-shadow:(0 0 5px #fbbf00);
+    box-shadow: (0 0 15px #fbbf00);
     cursor: pointer;
 }
 

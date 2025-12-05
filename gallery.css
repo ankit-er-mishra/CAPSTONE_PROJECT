@@ -1,6 +1,6 @@
 
 body {
-    background: linear-gradient(to bottom, #020923 10%, #000411 20%, #524dab 86%);
+    background: linear-gradient(to bottom, #020923 10%, #000411 20%, #2f2b75 86%);
     overflow-x: hidden;
     padding: 0;
     margin: 0;
@@ -12,6 +12,7 @@ body {
 .hero {
     background-image: linear-gradient(to bottom, rgba(3, 0, 16, 0) 1%, hsl(227, 92%, 10%) 90%), url(https://www.rockstargames.com/VI/_next/image?url=%2FVI%2F_next%2Fstatic%2Fmedia%2FDreQuan_Priest_landscape.9070b529.jpg&w=3024&q=75);
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
     width: 100%;
@@ -101,11 +102,11 @@ td.buy:hover {
 }
 
 @keyframes SlideIn {
-    from {
+    0% {
         opacity: 0;
         transform: translateY(-150px);
     }
-    to {
+    100% {
         opacity: 1;
         transform: translateY(0);
     }}
@@ -119,6 +120,66 @@ td.buy:hover {
     opacity: 0.7;
 }
 
+.gallery-section {
+    position: relative;
+    top: 15vh;
+    text-align: center;
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    margin-bottom: 50px;
+    margin-left: 25px;
+    animation: FadeIn 2s ease-in;
+    animation-timeline: view();
+}
+
+@keyframes FadeIn {
+    0%{
+        opacity: 0.2;
+    }
+
+    30% {
+        opacity: 1;
+    }
+}
+
+.gallery-section h2{
+    position: absolute;
+    left: 4vw;
+    top: -20vh;
+    font-size: 30px;
+    font-family: "obrinton";
+    color: #c7d8d8;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+    justify-content: space-evenly;
+    padding: 10px;
+    margin-top: 12vh;
+    margin-left: 4vw;
+    
+}
+
+.gallery-item{
+    background-color: rgb(29, 24, 40);
+    width: 378px;
+    font-family: 'Rajdhani';
+    font-weight: 700;
+    transition: 0.8s;
+    margin-bottom: 35px;
+    border: 1px solid transparent;
+    box-shadow: 0 0 10px rgb(131, 27, 235);
+    
+}
+
+.gallery-item:hover{
+    transform: scale(1.03);
+    border: 4px solid wheat;
+    box-shadow: 0 0 20px rgb(131, 27, 235);
+}
+
+
 
 
 
@@ -127,7 +188,7 @@ footer {
     position: relative;
     height: 40vh;
     color: rgb(255, 255, 255);
-    margin-top: 110vh;
+    margin-top: 30vh;
     margin-bottom: 0;
     text-align: center;
     padding: 20px;
@@ -310,7 +371,7 @@ footer p {
 
 .footer-logo1:hover {
     transform: scale(1.02);
-    box-shadow:(0 0 5px #fbbf00);
+    box-shadow: (0 0 15px #fbbf00);
     cursor: pointer;
 }
 
@@ -324,16 +385,192 @@ footer p {
     position: absolute;
     top: 6vh;
     border-right: 0.7px solid white;
-    left: 85vw;
-}
-.gallery-grid{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
+    left: 85vw;}
+
+@media screen and (max-width: 768px) {
+
     
-    gap: 15px;
-}
-.gallery-item{
-    width: 400px;
+    .headpage {
+        top: 50%;
+        left: 5%;
+        font-size: 24px;
+    }
+
+    .navigation table {
+        font-size: 12px;
+    }
+
+    .logo {
+        height: 80px;
+    }
+
+    
+    .gallery-grid {
+        grid-template-columns: 1fr; 
+        gap: 15px;
+        margin-left: 0;
+    }
+
+    .gallery-item {
+        max-width: 100%;
+    }
+
+    .gallery-section h2 {
+        left: 5%;
+        font-size: 24px;
+    }
 }
 
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+    .headpage {
+        top: 55%;
+        left: 8%;
+        font-size: 28px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 20px;
+        margin-left: 2vw;
+    }
+
+    .gallery-section h2 {
+        left: 4vw;
+        font-size: 28px;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    .headpage {
+        font-size: 36px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    footer {
+        height: auto;
+        padding: 20px 10px;
+        text-align: center;
+    }
+
+    .foot1 p {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+    .foot1 i {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin: 0 5px;
+        font-size: 25px;
+    }
+
+    .footer-logos img {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin: 5px;
+        height: 50px;
+        width: auto;
+    }
+
+    .line-foot1, .line-foot2 {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .terms {
+        flex-direction: column;
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-top: 10px;
+    }
+
+    .terms a {
+        margin: 5px 0;
+        font-size: 14px;
+    }
+
+    footer p {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        font-size: 12px;
+        margin-top: 15px;
+    }
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+    .foot1 p {
+        font-size: 16px;
+        left: 2vw;
+    }
+
+    .foot1 i {
+        font-size: 28px;
+        margin: 0 8px;
+    }
+
+    .footer-logos img {
+        height: 60px;
+        margin: 5px 10px;
+    }
+
+    .terms a {
+        font-size: 16px;
+        margin-right: 15px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+
+    .line-foot1, .line-foot2 {
+        width: 95%;
+        left: 2.5%;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    .foot1 p {
+        font-size: 18px;
+    }
+
+    .foot1 i {
+        font-size: 32px;
+    }
+
+    .footer-logos img {
+        height: 80px;
+    }
+
+    .terms a {
+        font-size: 18px;
+        margin-right: 25px;
+    }
+
+    footer p {
+        font-size: 16px;
+    }
+}
 
